@@ -3,130 +3,148 @@
   font-family: Wisdom Script;
   src: url('../fonts/wisdom-script.otf') format('opentype');
 }
+
 body {
   font-family: 'Montserrat', sans-serif;
-  color: #000000;
   background-color: #ffffff;
 }
- #specials, #reviews, #contact {
-   height: 210px;
- }
 
- /***** GRID *****/
- .full-width {
-   width: 1200px;
-   margin:0 auto;
- }
+.container {
+  width: 200px;
+  margin: 0 auto;
+}
 
- .half-width {
-   width: 600px;
-   float: left;
- }
-
- .third-width {
-   width: 400px;
-   float: left;
-   }
-
-/***** HEADER *****/
-header {
-  height: 80px;
+h1, h2, h3, h4 {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 h1 {
   font-size: 30px;
-  text-transform: uppercase;
-  padding: 30px 0 30px 20px;
-  font-weight: bold;
-}
-
-.green-text {
-  color: #77a466;
-}
-
-nav {
-  float: right;
-  padding: 45px 20px 35px 20px;
-  word-spacing: 20px;
-  }
-
-nav ul li{
-  display: inline-block;
-  margin-right: 0;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: bold;
-  }
-
-/***** ABOUT *****/
-
-img {
-  border-top: 3px solid #77a466;
-  border-bottom: 3px solid #77a466;
-  margin: 0 20px 0 20px;
 }
 
 h2 {
-  color: #77a466;
-  text-transform: uppercase;
   font-size: 18px;
-  font-weight: bold;
-  padding-left: 20px;
-}
-
-p {
-  font-size: 16px;
-  font-weight: 400;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 20px;
-}
-
-/***** DETAILS *****/
-
-#details {
-  border-top: 1px solid #dedbec;
+  color: #77a466;
+  text-align: left;
+  padding: 5px 0;
 }
 
 h3 {
   font-size: 12px;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding-left: 20px;
 }
+
+h4 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 23px;
+  padding: 0 30px;
+  /****
+    font-weight: 400;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;***/
+}
+
+header {
+  height: 80px;
+  border-bottom: 3px solid #77a466;
+  margin 0 auto;
+}
+
+header h1 {
+  float: left;
+  margin: 0;
+  padding: 38px 0;
+}
+
+header h1 span {
+  color: #77a466;
+}
+
+header nav {
+  float: right;
+  padding: 45px 20px 35px 20px;
+  word-spacing: 20px;
+}
+
+header nav ul li {
+  display: inline;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #77a466;
+}
+
+.top-section, .bottom-section {
+  margin: 0 auto;
+  clear: both;
+}
+
+.main-image {
+  height: auto;
+}
+
+.main-image img {
+  border-bottom: 3px solid #77a466;
+  margin: 0 20px 0 20px;
+}
+
+.main-title {
+  height: auto;
+}
+
+.section-one, .section-two, .section-three {
+  border-top: 1px solid #dedbec;
+  width: 399px;
+  height: auto;
+}
+/****
+.section-one, .section-two, .section-three {
+  height: 210px;
+}
+****/
 
 .menu {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 20px;
-  line-height: 32px;
+  list-style: none;
+  padding:0;
 }
 
-#reviews {
+.menu li {
+  padding: 10px 0;
+  color: #77a466;
+}
+
+.section-two {
   border-right: 1px solid #dedbec;
   border-left: 1px solid #dedbec;
 }
-p .third-width {
+.reviews {
   font-size: 16px;
-  font-weight: 400;
-  }
+  line-height: 23px;
+}
 
 /***** FOOTER *****/
-
-.tagline {
+footer {
   border-top: 3px solid #dedbec;
   clear: both;
-  font-size: 16px;
-  font-weight: 700;
   height: 50px;
   margin: 0 auto;
   padding-top: 20px;
-  text-transform: uppercase;
   text-align: center;
 }
 
-.fresh {
-  font-family: 'Wisdom Script';
+footer h4 span {
+  font-family: 'Wisdom Script', cursive;
   text-transform: lowercase;
   color: #77a466;
-    }
+}
